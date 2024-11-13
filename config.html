@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurazione Partita - Taboo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="config-container">
+        <h1>Configurazione della Partita</h1>
+        <form id="configForm">
+            <div class="form-group">
+                <label>Durata del turno (secondi):
+                    <input type="number" id="turnTime" min="5" max="300" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Numero di skip per turno:
+                    <input type="number" id="skipLimit" min="1" max="10" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Numero di turni:
+                    <input type="number" id="turnsNumber" min="1">
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="noLimits"> No limits
+                </label>
+            </div>
+            <button type="button" onclick="startGame()">Start</button>
+        </form>
+    </div>
+    <img src="sfondo configurazione.jpg" alt="Descrizione dell'immagine" class="config-image">
+</body>
+<script src="config.js"></script>
+</html>

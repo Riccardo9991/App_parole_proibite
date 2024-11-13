@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco - Taboo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameBody">
+        <span id="score">Team Rosso: 0 - Team Blu: 0</span>
+        <span id="timer">timer</span>
+    </div>
+    <div class="game-content">
+        <h2>Parola da indovinare:</h2>
+        <div id="mainWord"></div>
+
+        <h3>Parole proibite:</h3>
+        <div id="forbiddenWords"></div>
+    </div>
+    <div class="game-footer">
+        <button id="correctButton" onclick="correctAnswer()">✔️</button>
+        <button id="skipButton" onclick="skipWord()">↩️</button>
+        <button id="decrementScoreButton" onclick="decrementScore()">-1</button>
+        <button id="startTurnButton" onclick="startTurn()" style="display:none;">Prossimo Turno</button>
+    </div>
+    <div id="endScreen" style="display:none;">
+        <h2>La partita è finita!</h2>
+        <h3 id="winner">Vincitore: </h3>
+        <div id="scoreResult"></div>
+    </div>
+</body>
+<script src="game.js"></script>
+<script src="config.js"></script>
+</html>

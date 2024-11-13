@@ -1,0 +1,14 @@
+[
+  { "mainWord": "COMPUTER", "forbiddenWords": ["TECNOLOGIA", "SCHERMO", "INTERNET", "SOFTWARE", "HARDWARE"] },
+  { "mainWord": "IGLOO", "forbiddenWords": ["ALASKA", "ESCHIMESE", "GHIACCIO", "CASA", "FREDDO"] },
+  { "mainWord": "FRACASSO", "forbiddenWords": ["RUMORE", "TRAFFICO", "FRASTUONO", "COLLISIONE", "BARUFFA"] },
+  { "mainWord": "ARBITRO", "forbiddenWords": ["GARA", "SPORT", "TENNIS", "CALCIO", "PARTITA"] },
+  { "mainWord": "SALMONE", "forbiddenWords": ["PESCE", "FIUME", "CAVIALE", "CIBO", "CORRENTE"] },
+  { "mainWord": "DALMATA", "forbiddenWords": ["CANE", "CARTONE ANIMATO", "CARICA DEI 101", "QUADRUPEDE", "RAZZA"] },
+  { "mainWord": "COMPACT DISC", "forbiddenWords": ["STEREO", "MUSICA", "REGISTRATORE", "LONG PLAYING", "45 GIRI"] },
+  { "mainWord": "GELO", "forbiddenWords": ["GHIACCIO", "FREDDO", "BRINA", "NEVE", "INVERNO"] },
+  { "mainWord": "DETERSIVO", "forbiddenWords": ["POLVERE", "LIQUIDO", "LAVARE", "PULIRE", "STOVIGLIE"] },
+  { "mainWord": "BROCCA", "forbiddenWords": ["THE", "CAFFE", "RECIPIENTE", "BOTTIGLIA", "ACQUA"] },
+  { "mainWord": "BARCOLLARE", "forbiddenWords": ["OSCILLARE", "UBRIACO", "ZIG-ZAGARE", "VACILLARE", "INSTABILE"] },
+  { "mainWord": "PORTAFOGLIO", "forbiddenWords": ["CARTE DI CREDITO", "BORSELLINO", "MONETE", "SOLDI", "BANCONOTE"] },
+]

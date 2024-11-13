@@ -1,0 +1,172 @@
+#gameBody {
+    min-height: 100px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed; /* Impostiamo il posizionamento fisso */
+    top: 0; /* Imposta il margine superiore a 0 */
+    left: 0; /* Imposta il margine sinistro a 0 */
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.team-red {
+    background-color: red !important;
+}
+
+.team-blue {
+    background-color: blue !important;
+}
+
+body {
+    margin: 10%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-align: center;
+    position: relative;
+
+}
+
+.config-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 20px;
+    margin: 20px auto;
+    margin-bottom: 0 auto;
+    align-items: center;
+}
+
+.game-header, .game-content{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 0 auto;
+    align-items: center;
+    width: 100%;
+}
+
+.game-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.config-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%) translateY(25%) scale(0.75);
+    width: 100%; /* Adatta larghezza immagine */
+    max-width: 400px; /* Limita la larghezza massima */
+    opacity: 0.8; /* Rende l’immagine semitrasparente */
+    z-index: 1; /* Mantiene l’immagine dietro al menù */
+}
+
+#configContainer label {
+    display: block; /* Assicura che ogni etichetta occupi una nuova riga */
+    margin-bottom: 20px !important; /* Spazio tra le etichette */
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+#correctButton {
+    background-color: green;
+}
+
+#skipButton {
+    background-color: yellow;
+    color: black;
+}
+
+#decrementScoreButton{
+    background-color: red;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#endScreen {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none; /* Nasconde la schermata di fine gioco inizialmente */
+    opacity: 0.9;
+}
+
+/* Animazione dei coriandoli */
+@keyframes confetti {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff4081;
+    animation: confetti 3s linear infinite;
+    opacity: 0;
+}
+
+#newGameButton {
+    margin-top: 60px; /* Aumenta o riduci il valore per regolare la distanza */
+    padding: 10px 20px; /* Opzionale: per rendere il pulsante più grande */
+    font-size: 1.2em; /* Opzionale: per rendere il testo del pulsante più grande */
+}
