@@ -144,6 +144,10 @@ button:disabled {
     opacity: 0.9;
 }
 
+#mainWord {
+    font-size: 1.8em; /* Cambia il valore per regolare la dimensione */
+}
+
 /* Animazione dei coriandoli */
 @keyframes confetti {
     0% {
@@ -169,4 +173,9 @@ button:disabled {
     margin-top: 60px; /* Aumenta o riduci il valore per regolare la distanza */
     padding: 10px 20px; /* Opzionale: per rendere il pulsante più grande */
     font-size: 1.2em; /* Opzionale: per rendere il testo del pulsante più grande */
+}
+
+input[type="number"],
+textarea{
+    width: 50px;
 }
